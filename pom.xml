@@ -19,7 +19,7 @@
             <artifactId>ysoserial</artifactId>
             <version>0.0.6</version>
             <scope>system</scope>
-            <systemPath>D:/project/java/deswing/lib/ysoserial.jar</systemPath>
+            <systemPath>D:/project/java/Deswing/lib/ysoserial.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.formdev</groupId>

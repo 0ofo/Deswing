@@ -22,6 +22,7 @@ public class PayloadPanel {
     private JTextField commandField;
     private JButton exportBtn;
     private PayloadTableModel tableModel;
+    private static final File currentDir = new File("./");
 
     public PayloadPanel() {
         tableModel = new PayloadTableModel();
@@ -39,6 +40,7 @@ public class PayloadPanel {
             }
             String payloadType = tableModel.getPayloadType(table.getSelectedRow());
             JFileChooser chooser = new JFileChooser();
+            chooser.setCurrentDirectory(currentDir);
             chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
             chooser.showSaveDialog(null);
             File file = chooser.getSelectedFile();
@@ -54,6 +56,7 @@ public class PayloadPanel {
                 Serializer.serialize(object, fos);
                 ObjectPayload.Utils.releasePayload(payload, object);
                 JOptionPane.showMessageDialog(null, "success");
+                fos.close();
             } catch (Exception ex) {
                 JOptionPane.showMessageDialog(panel, ex.getMessage());
             }
