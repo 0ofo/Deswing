@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="deswing:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/deswing_jar</output-path>
+    <root id="archive" name="deswing.jar">
+      <element id="module-output" name="deswing" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/asm/asm/3.0/asm-3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/formdev/flatlaf/3.4.1/flatlaf-3.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/jgoodies/forms/1.1-preview/forms-1.1-preview.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/asm/asm-tree/3.0/asm-tree-3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/ysoserial.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/intellij/forms_rt/7.0.3/forms_rt-7.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/asm/asm-commons/3.0/asm-commons-3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/jdom/jdom/1.0/jdom-1.0.jar" path-in-jar="/" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources/META-INF" />
+    </root>
+  </artifact>
+</component>
